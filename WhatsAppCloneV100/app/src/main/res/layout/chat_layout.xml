@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+
+    android:layout_marginHorizontal="10dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/man"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="sans-serif-medium"
+            android:text="Chirag"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/last_mssg_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:text="Last Message"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/not_in_contact_chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not in Contact"
+        android:layout_gravity="center"
+        android:textSize="7sp"
+        android:visibility="gone"
+        android:padding="5dp"
+        android:background="@drawable/rectangle_black"
+        android:textColor="@color/colorPrimary"/>
+
+
+</LinearLayout>

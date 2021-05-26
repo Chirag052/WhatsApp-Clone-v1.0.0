@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageOTP">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Waiting to automatically detect an SMS. "
+            android:layout_marginLeft="15dp" />
+        <TextView
+            android:id="@+id/wrongnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:textColor="#0000EE"
+            android:textSize="18sp"
+            android:text="Wrong Number?"/>
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/inp1"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textStyle="bold"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        />
+    <EditText
+        android:id="@+id/inp2"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="1"
+        android:backgroundTint="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        />
+    <EditText
+        android:id="@+id/inp3"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textStyle="bold"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        />
+    <EditText
+        android:id="@+id/inp4"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:backgroundTint="@color/colorPrimary"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        />
+    <EditText
+        android:id="@+id/inp5"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:backgroundTint="@color/colorPrimary"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        />
+    <EditText
+        android:id="@+id/inp6"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:backgroundTint="@color/colorPrimary"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        />
+</LinearLayout>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Enter 6-digit code"
+          android:textSize="14sp"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_drawable"
+        android:dividerPadding="2.5dp"
+
+        android:orientation="vertical"
+        android:showDividers="end"
+        android:weightSum="2"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="?android:listDivider"
+            android:dividerPadding="2.5dp"
+            android:orientation="horizontal"
+            android:showDividers="end"
+            android:weightSum="2"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+
+                android:src="@drawable/ic_baseline_message_24"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resend SMS"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:divider="@drawable/divider_drawable"
+            android:showDividers="middle">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+
+                android:src="@drawable/ic_baseline_call_24"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="20dp"
+                android:text="Call me"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_verifyAndSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="verify and sign in"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/> />
+</RelativeLayout>
